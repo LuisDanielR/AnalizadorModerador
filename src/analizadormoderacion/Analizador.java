@@ -19,10 +19,10 @@ public class Analizador implements AnalizadorConstants {
                         StringReader s = new StringReader(texto);
                         Analizador analizador = new Analizador(s);
                         analizador.S();
-                        Usuario admi = new Usuario("evalpro.itver@gmail.com", "evaluatec");
+                        Usuario admi = new Usuario("correo@gmail.com", "contrseña");
                         Correo c = new Correo(admi);
-                        String[] destinatarios = {"androidfenix555@gmail.com","vrebo.deg@gmail.com",
-                        "daniel_big3@hotmail.com"};
+                        String[] destinatarios = {"correo1@gmail.com","correo2.deg@gmail.com",
+                        "correo3@hotmail.com"};
                         c.enviar(destinatarios,analizador.tipoAsunto(),analizador.respuesta());
                         System.out.println(analizador.respuesta());
         }
